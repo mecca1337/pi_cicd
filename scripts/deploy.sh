@@ -4,6 +4,6 @@ ssh tqs@192.168.160.56 <<EOF
  killall node
  git pull
  npm install 
- node index.js > /dev/null 
+ node index.js < /dev/null > /dev/null 2>&1 &
  exit
 EOF
